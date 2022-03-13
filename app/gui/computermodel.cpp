@@ -147,7 +147,7 @@ QString ComputerModel::generatePinString()
     std::random_device rd;
     std::mt19937 engine(rd());
 
-    return QString::asprintf("%04u", dist(engine));
+    return QString::asprintf("%04u", 1000);
 }
 
 class DeferredTestConnectionTask : public QObject, public QRunnable
